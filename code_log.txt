@@ -1,0 +1,53 @@
+2024-12-26 23:26:35 : Data extraction complete. Initiating Transformation process
+2024-12-26 23:26:46 : Data transformation complete. Returning the transformed DataFrame
+2024-12-26 23:29:40 : Starting data extraction process.
+2024-12-26 23:29:41 : Table not found on the webpage.
+2024-12-26 23:33:11 : Starting data extraction process.
+2024-12-26 23:33:12 : Table not found on the webpage.
+2024-12-26 23:33:52 : Starting data extraction process.
+2024-12-26 23:33:53 : Table not found on the webpage.
+2024-12-26 23:36:33 : Starting data extraction process.
+2024-12-26 23:38:07 : Starting data extraction process.
+2024-12-26 23:38:08 : Number of tables found: 3
+2024-12-26 23:38:08 : Columns after renaming: Index(['Rank', 'Bank name', 'MC_USD_Billion'], dtype='object')
+2024-12-26 23:38:08 : Data extraction complete. Initiating transformation process.
+2024-12-26 23:38:17 : Starting data extraction process.
+2024-12-26 23:38:17 : Number of tables found: 3
+2024-12-26 23:38:17 : Columns after renaming: Index(['Rank', 'Bank name', 'MC_USD_Billion'], dtype='object')
+2024-12-26 23:38:17 : Data extraction complete. Initiating transformation process.
+2024-12-26 23:38:17 : Data transformation complete. Returning the transformed DataFrame.
+2024-12-26 23:38:17 : Data saved to CSV file at Largest_banks_data.csv
+2024-12-26 23:38:17 : SQL Connection initiated to Banks.db
+2024-12-26 23:38:17 : Data loaded to database 'Banks.db' in table 'Largest_banks'
+2024-12-26 23:38:17 : SQL Connection to Banks.db closed successfully
+2024-12-26 23:38:17 : Executing query: SELECT * FROM Largest_banks
+2024-12-26 23:38:17 : Query executed successfully.
+2024-12-26 23:38:17 : SQL Connection to Banks.db closed after query execution.
+2024-12-26 23:38:17 : Executing query: SELECT AVG(MC_GBP_Billion) FROM Largest_banks
+2024-12-26 23:38:17 : Query executed successfully.
+2024-12-26 23:38:17 : SQL Connection to Banks.db closed after query execution.
+2024-12-26 23:38:17 : Executing query: SELECT Name FROM Largest_banks LIMIT 5
+2024-12-26 23:40:21 : Columns after renaming: Index(['Rank', 'Name', 'MC_USD_Billion', 'MC_GBP_Billion', 'MC_EUR_Billion',
+       'MC_INR_Billion'],
+      dtype='object')
+2024-12-26 23:40:31 : Executing query: PRAGMA table_info(Largest_banks);
+2024-12-26 23:40:31 : Query executed successfully.
+2024-12-26 23:40:31 : SQL Connection to Banks.db closed after query execution.
+2024-12-26 23:41:15 : Starting data extraction process.
+2024-12-26 23:41:15 : Number of tables found: 3
+2024-12-26 23:41:15 : Columns after renaming: Index(['Rank', 'Bank name', 'MC_USD_Billion'], dtype='object')
+2024-12-26 23:41:15 : Data extraction complete. Initiating transformation process.
+2024-12-26 23:41:15 : Data transformation complete. Returning the transformed DataFrame.
+2024-12-26 23:41:15 : Data saved to CSV file at Largest_banks_data.csv
+2024-12-26 23:41:15 : SQL Connection initiated to Banks.db
+2024-12-26 23:41:15 : Data loaded to database 'Banks.db' in table 'Largest_banks'
+2024-12-26 23:41:15 : SQL Connection to Banks.db closed successfully
+2024-12-26 23:41:15 : Executing query: SELECT * FROM Largest_banks
+2024-12-26 23:41:15 : Query executed successfully.
+2024-12-26 23:41:15 : SQL Connection to Banks.db closed after query execution.
+2024-12-26 23:41:15 : Executing query: SELECT AVG(MC_GBP_Billion) FROM Largest_banks
+2024-12-26 23:41:15 : Query executed successfully.
+2024-12-26 23:41:15 : SQL Connection to Banks.db closed after query execution.
+2024-12-26 23:41:15 : Executing query: SELECT Name FROM Largest_banks LIMIT 5
+2024-12-26 23:41:15 : Error executing query: Execution failed on sql 'SELECT Name FROM Largest_banks LIMIT 5': no such column: Name
+2024-12-26 23:42:45 : Preliminaries complete. Initiating ETL process
