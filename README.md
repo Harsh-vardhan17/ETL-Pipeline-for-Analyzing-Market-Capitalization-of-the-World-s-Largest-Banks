@@ -58,19 +58,38 @@ Clone this repository:
 (```bash
 git clone https://github.com/your_username/ETL_Pipeline_Project.git
 cd ETL_Pipeline_Project```)
+
 Install the required Python libraries:
 
-bash
-Copy code
-pip install -r requirements.txt
+(```bash
+pip install -r requirements.txt```)
+
 Run the ETL pipeline:
 
-bash
-Copy code
-python banks_project.py
+(```bash
+python banks_project.py```)
 
 Outputs
+
 Largest_banks_data.csv: Contains the transformed data.
 Banks.db: SQLite database with the data stored in the Largest_banks table.
 SQL query results will be printed in the terminal.
+
+## ETL Pipeline Workflow
+
+1. Extract
+The extract() function scrapes the table under the "By market capitalization" section from a Wikipedia page.
+Dynamically identifies and renames columns (Name, Market cap(US$ billion)).
+
+2. Transform
+The transform() function reads exchange rates from exchange_rate.csv.
+Converts MC_USD_Billion into:
+MC_GBP_Billion (British Pounds)
+MC_EUR_Billion (Euros)
+MC_INR_Billion (Indian Rupees)
+Rounds the converted values to two decimal places.
+
+3. Load
+The load_to_csv() function saves the final DataFrame into Largest_banks_data.csv.
+The load_to_db() function loads the data into the SQLite database Banks.db.
 
