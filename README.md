@@ -1,4 +1,4 @@
-### ETL Pipeline for Market Capitalization Analysis
+# ETL Pipeline for Market Capitalization Analysis
 
 Overview
 This project implements an ETL (Extract, Transform, Load) pipeline to analyze the market capitalization of the world's largest banks. The pipeline extracts data from a web source, transforms it by converting the market capitalization into multiple currencies, and loads the final dataset into both a CSV file and an SQLite database for further analysis.
@@ -6,22 +6,22 @@ This project implements an ETL (Extract, Transform, Load) pipeline to analyze th
 The project showcases how to efficiently process and manage data from extraction to querying, with clear steps and reusable components.
 
 ## Features
-# Data Extraction:
+### Data Extraction:
 
 Scrapes tabular data from a Wikipedia page listing the largest banks by market capitalization.
 Dynamically handles table structure changes by identifying and renaming relevant columns.
 
-# Data Transformation:
+### Data Transformation:
 
 Converts market capitalization data from USD into GBP, EUR, and INR using an exchange rate file.
 Rounds transformed values to the nearest billion or specified precision.
 
-# Data Loading:
+### Data Loading:
 
 Saves the transformed data into a CSV file.
 Loads the final dataset into an SQLite database for advanced querying.
 
-# SQL Queries:
+### SQL Queries:
 
 Prints the full dataset.
 Calculates the average market capitalization in GBP.
@@ -37,4 +37,40 @@ ETL_Pipeline_Project/
 ├── Largest_banks_data.csv     # Output CSV file with the transformed data
 ├── Banks.db                   # SQLite database containing the final data table
 ├── README.md                  # Project description file
+
+## Technologies Used
+
+Python: Core programming language for the ETL pipeline.
+Pandas: For data manipulation and transformation.
+SQLite3: To store and query the transformed data.
+BeautifulSoup: For web scraping.
+Requests: For HTTP requests to fetch web content.
+NumPy: For numerical computations and rounding operations.
+
+## Setup and Execution
+
+Prerequisites
+Python 3.x installed on your machine.
+Required Python libraries: pandas, numpy, sqlite3, beautifulsoup4, requests.
+Steps to Run
+Clone this repository:
+
+bash
+Copy code
+git clone https://github.com/your_username/ETL_Pipeline_Project.git
+cd ETL_Pipeline_Project
+Install the required Python libraries:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the ETL pipeline:
+
+bash
+Copy code
+python banks_project.py
+Outputs
+Largest_banks_data.csv: Contains the transformed data.
+Banks.db: SQLite database with the data stored in the Largest_banks table.
+SQL query results will be printed in the terminal.
 
