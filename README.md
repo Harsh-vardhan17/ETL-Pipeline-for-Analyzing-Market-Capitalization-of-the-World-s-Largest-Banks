@@ -57,8 +57,8 @@ Steps to Run
 Clone this repository:
 
 (```bash
-git clone https://github.com/your_username/ETL_Pipeline_Project.git
-cd ETL_Pipeline_Project```)
+git clone https://github.com/your_username/ETL_Pipeline_Project.git```
+```cd ETL_Pipeline_Project```)
 
 Install the required Python libraries:
 
