@@ -55,10 +55,9 @@ Required Python libraries: pandas, numpy, sqlite3, beautifulsoup4, requests.
 Steps to Run
 Clone this repository:
 
-bash
-Copy code
+(```bash
 git clone https://github.com/your_username/ETL_Pipeline_Project.git
-cd ETL_Pipeline_Project
+cd ETL_Pipeline_Project```)
 Install the required Python libraries:
 
 bash
@@ -69,6 +68,7 @@ Run the ETL pipeline:
 bash
 Copy code
 python banks_project.py
+
 Outputs
 Largest_banks_data.csv: Contains the transformed data.
 Banks.db: SQLite database with the data stored in the Largest_banks table.
