@@ -28,7 +28,7 @@ Calculates the average market capitalization in GBP.
 Lists the names of the top 5 banks.
 
 ## Project Structure
-
+```
 ETL_Pipeline_Project/
 │
 ├── banks_project.py           # Main Python script containing the ETL pipeline
@@ -37,6 +37,7 @@ ETL_Pipeline_Project/
 ├── Largest_banks_data.csv     # Output CSV file with the transformed data
 ├── Banks.db                   # SQLite database containing the final data table
 ├── README.md                  # Project description file
+```
 
 ## Technologies Used
 
@@ -89,58 +90,6 @@ MC_EUR_Billion (Euros)
 MC_INR_Billion (Indian Rupees)
 Rounds the converted values to two decimal places.
 
-3. Load
-The load_to_csv() function saves the final DataFrame into Largest_banks_data.csv.
-The load_to_db() function loads the data into the SQLite database Banks.db.
-
-## SQL Queries:
-
-Prints the full dataset.
-Calculates the average market capitalization in GBP.
-Lists the names of the top 5 banks.
-Technologies Used
-Python: Core programming language for the ETL pipeline.
-Pandas: For data manipulation and transformation.
-SQLite3: To store and query the transformed data.
-BeautifulSoup: For web scraping.
-Requests: For HTTP requests to fetch web content.
-NumPy: For numerical computations and rounding operations.
-Setup and Execution
-Prerequisites
-Python 3.x installed on your machine.
-Required Python libraries: pandas, numpy, sqlite3, beautifulsoup4, requests.
-Steps to Run
-Clone this repository:
-
-bash
-Copy code
-git clone https://github.com/your_username/ETL_Pipeline_Project.git
-cd ETL_Pipeline_Project
-Install the required Python libraries:
-
-bash
-Copy code
-pip install -r requirements.txt
-Run the ETL pipeline:
-
-bash
-Copy code
-python banks_project.py
-Outputs
-Largest_banks_data.csv: Contains the transformed data.
-Banks.db: SQLite database with the data stored in the Largest_banks table.
-SQL query results will be printed in the terminal.
-ETL Pipeline Workflow
-1. Extract
-The extract() function scrapes the table under the "By market capitalization" section from a Wikipedia page.
-Dynamically identifies and renames columns (Name, Market cap(US$ billion)).
-2. Transform
-The transform() function reads exchange rates from exchange_rate.csv.
-Converts MC_USD_Billion into:
-MC_GBP_Billion (British Pounds)
-MC_EUR_Billion (Euros)
-MC_INR_Billion (Indian Rupees)
-Rounds the converted values to two decimal places.
 3. Load
 The load_to_csv() function saves the final DataFrame into Largest_banks_data.csv.
 The load_to_db() function loads the data into the SQLite database Banks.db.
