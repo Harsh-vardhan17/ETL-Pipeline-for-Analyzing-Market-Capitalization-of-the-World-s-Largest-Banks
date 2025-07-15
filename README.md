@@ -125,5 +125,3 @@ Add automated scheduling to run the ETL pipeline periodically.
 Implement error handling for dynamic table structure changes.
 Extend support for additional currencies or regions.
 
-# License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project.
